@@ -1,0 +1,54 @@
+.titulo{
+    margin: 20px;
+   color: rgb(0, 0, 0);
+   display: flex;
+   justify-content: center;
+}
+
+.caja {
+    /* border: 1px solid black; */
+    margin: 25px;
+    padding: 23px;
+    display: inline-grid;
+}
+
+
+
+.negro{
+    color: black;
+}
+
+.maxpoke {
+    width: 285px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+/* .colorBoton {
+    color: white;
+    background-color: rgba(214, 4, 4, 0.452);
+}
+
+.colorBoton:hover{
+    background-color: red;
+} */
+
+
+.carrito{
+    border: 1px solid black;
+    margin: 30px;
+    padding: 10px;
+    display: inline-grid;
+}
+
+.carrito img {
+    width: 120px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.carrito button{
+    border: 2px solid black;
+    background-color: cornflowerblue;
+    margin: 10px;
+}
