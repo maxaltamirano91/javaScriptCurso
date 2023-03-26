@@ -1,3 +1,12 @@
+
+const banner = document.getElementById("banner");
+
+setTimeout(() => {
+  banner.innerHTML="";
+},4000);
+
+
+
 class Producto {
   constructor(id, nombre, precio, img) {
     this.id = id;
@@ -13,8 +22,15 @@ const gohan = new Producto(1, "Gohan", 850, "img/gohan.jpg");
 const maki = new Producto(2, "Maki", 700, "img/maki.jpg");
 const ramen = new Producto(3, "Ramen", 1020, "img/ramen.jpg");
 const sushi = new Producto(4, "Sushi", 999, "img/sushi.jpg");
+const postre1 = new Producto(5, "Frutilla" , 350 , "img/frutilla.jpg");
+const postre2 = new Producto(6, "Chocolate" , 370 , "img/chocolate.jpg");
+const postre3 = new Producto(7, "Helado " , 250 , "img/helado.jpg");
+const postre4 = new Producto(8, "Torta" , 370 , "img/torta.jpg");
+const coca = new Producto(9, "Coca-Cola" , 200 , "img/coca.jpg");
+const jugo = new Producto(10, "Naranja" , 300 , "img/naranja.jpg");
+const agua = new Producto(11, "Agua" , 370 , "img/agua.jpg");
 
-const productos = [gohan, maki, ramen, sushi];
+const productos = [gohan, maki, ramen, sushi, postre1, postre2, postre3, postre4, coca, jugo, agua];
 
 let carrito = [];
 
@@ -37,6 +53,8 @@ productos.forEach((producto) => {
                                    <a href="#" class="btn btn-primary" id = "boton${producto.id}">Añadir al Carrito</a>
                                   </div>
                                   </div>`;
+
+
 
   divContenedor.appendChild(divMostrarProducto);
 
@@ -89,13 +107,15 @@ const mostrarCarrito = () => {
       card.innerHTML = `
               <div class = "card" >
                      
-                  <div class = "card-body" >
-                      <h2> ${producto.nombre} </h2>
-                      <p> ${producto.precio} </p>
-                      <p> ${producto.cantidad} </p>
+                  <div class = "card-final" >
+                      <h3 class="nombre"> ${producto.nombre} </h3>
+                      <p class="precio">  $ ${producto.precio} </p>
+                      <p class="cantidad"> cantidad ${producto.cantidad} </p>
                       <button class = "btn btn-primary" id="eliminar${producto.id}" > Eliminar</button>
                   </div>
               </div>`
+
+
 
       contenedorCarrito.appendChild(card);
 

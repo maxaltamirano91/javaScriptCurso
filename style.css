@@ -1,18 +1,33 @@
+
+
+body {
+    background-image: url("img/fondopantalla.jpg");
+
+  }
+
+.constructor h1 {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .titulo{
-    margin: 20px;
+margin: 20px;
    color: rgb(0, 0, 0);
    display: flex;
    justify-content: center;
+ 
 }
 
+
 .caja {
-    /* border: 1px solid black; */
     margin: 25px;
     padding: 23px;
     display: inline-grid;
 }
 
-
+.card {
+    border: 2px solid black;
+}
 
 .negro{
     color: black;
@@ -24,15 +39,33 @@
     margin-bottom: 10px;
 }
 
-/* .colorBoton {
-    color: white;
-    background-color: rgba(214, 4, 4, 0.452);
+.carritoWeb {
+    background-color: #880076;
+    /*position:fixed;*/
+    top: 30%;
+    right: 10px;
+    border: 1px solid white;
+  }
+
+.totalCarrito {
+    display: block;
+    margin: 10px;
+    
 }
 
-.colorBoton:hover{
-    background-color: red;
-} */
+.totalCarrito h3 {
+    color: white;
+}
 
+.carritoImagen1{
+  display: flex;
+}
+
+.carritoImagen {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
 
 .carrito{
     border: 1px solid black;
@@ -52,3 +85,51 @@
     background-color: cornflowerblue;
     margin: 10px;
 }
+
+
+
+.sectionContenedor{
+    margin-left: 10px;
+    display: flex;
+    justify-content: left;
+    width: 400px;
+    height: 300px;
+}
+
+.sectionContenedor .card-final {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-final{
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    
+    
+}
+
+.card-final .precio {
+    margin: 10px;
+}
+
+.card-final .cantidad {
+    margin: 10px;
+}
+
+.card-final .nombre {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner img {
+    width: 400px;
+    height: 500px;
+}
+
+
+
